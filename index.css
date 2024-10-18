@@ -1,0 +1,150 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+h1 {
+    color: #333;
+    font-size: 2.5rem;
+    margin-top: 20px;
+}
+
+table {
+    width: 90%;
+    max-width: 1200px;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+thead {
+    background-color: #4CAF50;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+thead th {
+    padding: 15px;
+    font-size: 14px;
+}
+
+tbody td {
+    padding: 12px;
+    font-size: 14px;
+    color: #555;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+tbody td[contenteditable="true"] {
+    background-color: #fff9c4;
+    cursor: text;
+    outline: none;
+}
+
+tbody td[contenteditable="true"]:hover {
+    background-color: #fff59d;
+}
+
+tfoot td {
+    padding: 10px;
+    font-weight: bold;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Buttons */
+button {
+    padding: 10px 20px;
+
+    font-size: 16px;
+    margin: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    table {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    tbody td, thead th {
+        padding: 8px;
+    }
+
+    button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    button {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    table {
+        width: 100%;
+        font-size: 10px;
+    }
+
+    tbody td, thead th {
+        padding: 6px;
+    }
+}
+
+
+
+.td1{
+    background-color: rgb(199, 198, 198);
+    border-left: black;
+}
+.d{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.q1,.q2,.q3{
+    text-align:center; 
+    height: 50px;
+    width: 380px;
+}

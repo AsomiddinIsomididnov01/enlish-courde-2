@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Se Pay Shan 14:00 dan 15:30 Student Progress Tracker</title>
+   
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
+</head>
+<body>
+    <h1>Weekly Progress Tracker</h1>
+
+    <p id="currentDate"></p> <!-- Hozirgi sanani ko'rsatish uchun joy -->
+    <table id="progressTable">
+        <thead>
+            <tr>
+                <th>Student Name</th>
+                <th>Vocabulary (%)</th>
+                <th>Speaking (%)</th>
+                <th>Reading (%)</th>
+                <th>Listening (%)</th>
+                <th>Practice (%)</th>
+                <th>Average (%)</th>
+                <th>Davomat</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Rows will be dynamically added here -->
+          
+                <tr>
+                 
+                    <td contenteditable="false">Isomiddinov Asomiddin</td>
+                    <td contenteditable="true">0</td>
+                    <td contenteditable="true">0</td>
+                    <td contenteditable="true">0</td>
+                    <td contenteditable="true">0</td>
+                    <td contenteditable="true">0</td>
+                    <td>0</td><td class="td1"><button onclick="markAbsent(this)">K</button></td>
+                </tr>
+                <tr>
+                    <td contenteditable="false">Azizbek Ikromov</td>
+                    <td contenteditable="true">0</td>
+                    <td contenteditable="true">0</td>
+                    <td contenteditable="true">0</td>
+                    <td contenteditable="true">0</td>
+                    <td contenteditable="true">0</td>
+                    <td>0</td><td class="td1"><button onclick="markAbsent(this)">K</button></td></td>
+                </tr>
+                <tr>
+                    <td contenteditable="false">Moxinur Amriddinova</td>
+                    <td contenteditable="true">0</td>
+                    <td contenteditable="true">0</td>
+                    <td contenteditable="true">0</td>
+                    <td contenteditable="true">0</td>
+                    <td contenteditable="true">0</td>
+                    <td>0</td><td class="td1"><button onclick="markAbsent(this)">K</button></td></td>
+                </tr>
+                <tr>
+                    <td contenteditable="false">Ulugbek Habibulayev</td>
+                    <td contenteditable="true">0</td>
+                    <td contenteditable="true">0</td>
+                    <td contenteditable="true">0</td>
+                    <td contenteditable="true">0</td>
+                    <td contenteditable="true">0</td>
+                    <td>0</td><td class="td1"><button onclick="markAbsent(this)">K</button></td></td>
+                </tr>
+                <tr>
+                    <td contenteditable="false">Fayzullaxon Sattarov</td>
+                    <td contenteditable="true">0</td>
+                    <td contenteditable="true">0</td>
+                    <td contenteditable="true">0</td>
+                    <td contenteditable="true">0</td>
+                    <td contenteditable="true">0</td>
+                    <td>0</td><td class="td1"><button onclick="markAbsent(this)">K</button></td></td>
+                </tr>
+                <tr>
+                    <td contenteditable="false">Tozagul Abdusalomova</td>
+                    <td contenteditable="true">0</td>
+                    <td contenteditable="true">0</td>
+                    <td contenteditable="true">0</td>
+                    <td contenteditable="true">0</td>
+                    <td contenteditable="true">0</td>
+                    <td>0</td><td class="td1"><button  onclick="markAbsent(this)">K</button></td></td>
+                </tr>
+                <tr>
+                    <td contenteditable="false">Shabbona Mamasoliyeva</td>
+                    <td contenteditable="true">0</td>
+                    <td contenteditable="true">0</td>
+                    <td contenteditable="true">0</td>
+                    <td contenteditable="true">0</td>
+                    <td contenteditable="true">0</td>
+                    <td>0</td><td class="td1"><button onclick="markAbsent(this)">K</button></td></td>
+                </tr>
+                <tr>
+                    <td contenteditable="false">Mehrangiz Abduhalikova</td>
+                    <td contenteditable="true">0</td>
+                    <td contenteditable="true">0</td>
+                    <td contenteditable="true">0</td>
+                    <td contenteditable="true">0</td>
+                    <td contenteditable="true">0</td>
+                    <td>0</td>
+                    <td class="td1"><button onclick="markAbsent(this)">K</button></td></td>
+                </tr>
+                <tr>
+                    <td contenteditable="false">Ismoil Berkinov</td>
+                    <td contenteditable="true">0</td>
+                    <td contenteditable="true">0</td>
+                    <td contenteditable="true">0</td>
+                    <td contenteditable="true">0</td>
+                    <td contenteditable="true">0</td>
+                    <td>0</td>
+                    <td class="td1"><button onclick="markAbsent(this)">K</button></td></td>
+                </tr>
+                <tr>
+                    <td contenteditable="false">Oisha Qurbonova</td>
+                    <td contenteditable="true">0</td>
+                    <td contenteditable="true">0</td>
+                    <td contenteditable="true">0</td>
+                    <td contenteditable="true">0</td>
+                    <td contenteditable="true">0</td>
+                    <td>0</td>
+                    <td class="td1"><button onclick="markAbsent(this)">K</button></td></td>
+                </tr>
+                <tr>
+                    <td contenteditable="false">Nodirbek Razzaqov</td>
+                    <td contenteditable="true">0</td>
+                    <td contenteditable="true">0</td>
+                    <td contenteditable="true">0</td>
+                    <td contenteditable="true">0</td>
+                    <td contenteditable="true">0</td>
+                    <td>0</td>
+                    <td class="td1"><button onclick="markAbsent(this)">K</button></td></td>
+                </tr>
+                <tr>
+                    <td contenteditable="false">Sug'diyona Qanotova</td>
+                    <td contenteditable="true">0</td>
+                    <td contenteditable="true">0</td>
+                    <td contenteditable="true">0</td>
+                    <td contenteditable="true">0</td>
+                    <td contenteditable="true">0</td>
+                    <td>0</td>
+                    <td class="td1"><button onclick="markAbsent(this)">K</button></td></td>
+                </tr>
+                <tr>
+                    <td contenteditable="false">Mirsaid Erkinov</td>
+                    <td contenteditable="true">0</td>
+                    <td contenteditable="true">0</td>
+                    <td contenteditable="true">0</td>
+                    <td contenteditable="true">0</td>
+                    <td contenteditable="true">0</td>
+                    <td>0</td>
+                    <td class="td1"><button onclick="markAbsent(this)">K</button></td></td>
+                </tr>
+                <tr>
+                    <td contenteditable="false">Doniyor Umarov</td>
+                    <td contenteditable="true">0</td>
+                    <td contenteditable="true">0</td>
+                    <td contenteditable="true">0</td>
+                    <td contenteditable="true">0</td>
+                    <td contenteditable="true">0</td>
+                    <td>0</td>
+                    <td class="td1"><button onclick="markAbsent(this)">K</button></td></td>
+                </tr>
+                <tr>
+                    <td contenteditable="false">Farangiz Eshqavvatov</td>
+                    <td contenteditable="true">0</td>
+                    <td contenteditable="true">0</td>
+                    <td contenteditable="true">0</td>
+                    <td contenteditable="true">0</td>
+                    <td contenteditable="true">0</td>
+                    <td>0</td>
+                    <td class="td1"><button onclick="markAbsent(this)">K</button></td></td>
+                </tr>
+                <tr>
+                    <td contenteditable="false">Shahrizoda Mahmudova</td>
+                    <td contenteditable="true">0</td>
+                    <td contenteditable="true">0</td>
+                    <td contenteditable="true">0</td>
+                    <td contenteditable="true">0</td>
+                    <td contenteditable="true">0</td>
+                    <td>0</td>
+                    <td class="td1"><button onclick="markAbsent(this)">K</button></td></td>
+                </tr>
+                <tr>
+                    <td contenteditable="false">Nilufar Rahmatova</td>
+                    <td contenteditable="true">0</td>
+                    <td contenteditable="true">0</td>
+                    <td contenteditable="true">0</td>
+                    <td contenteditable="true">0</td>
+                    <td contenteditable="true">0</td>
+                    <td>0</td>
+                    <td class="td1"><button onclick="markAbsent(this)">K</button></td></td>
+                </tr>
+                <tr>
+                    <td contenteditable="false">Mastone Huseine</td>
+                    <td contenteditable="true">0</td>
+                    <td contenteditable="true">0</td>
+                    <td contenteditable="true">0</td>
+                    <td contenteditable="true">0</td>
+                    <td contenteditable="true">0</td>
+                    <td >0</td>
+                    <td  class="td1"><button onclick="markAbsent(this)">K</button></td></td>
+                </tr>
+              
+
+
+                <!-- Qo'shimcha o'quvchilarni shu yerga qo'shishingiz mumkin -->
+            
+        </tbody>
+    </table>
+
+    <!-- <button onclick="addStudentRow()">Add Student</button> -->
+   <div class="d"> <button class="q1" onclick="calculateAverages()">Calculate Weekly Averages</button>
+    <button class="q2" onclick="downloadExcel()">Download Excel</button>
+    <button class="q3" onclick="sendWeeklyAverages()">Weekly Average Telegramga yuborish</button>
+</div>
+    <script src="index.js"></script>
+   
+</body>
+</html>
